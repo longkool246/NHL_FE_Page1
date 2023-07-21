@@ -1,0 +1,57 @@
+.page-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 70px;
+  .page-img {
+    width: 50%;
+    img {
+      border-radius: 16px;
+      height: auto;
+    }
+  }
+  .page-content {
+    .content-quote {
+      img {
+        padding: 15px;
+        border-radius: 50%;
+      }
+    }
+    .content-main {
+      padding: 41px 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.85;
+      width: 85%;
+    }
+    .content-author {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #2D2A3E;
+      margin-bottom: 70px;
+    }
+    .content-nav {
+      display: flex;
+      align-items: center;
+      gap: 13px; 
+      .nav-radio{
+        outline: none;
+        border: none;
+        appearance: none;
+      }
+      .nav-radio:not(:checked) {
+        width: 16px;
+        height: 16px;
+        background-color: #E8E8EB;
+        border-radius: 50%;
+      }
+      .nav-radio:checked {
+        width: 21px;
+        height: 21px;
+        background-color: #5E68F9;
+        border-radius: 50%;
+      }
+    }
+  }
+}

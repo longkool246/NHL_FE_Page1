@@ -57,14 +57,14 @@
     border-radius: 50%;
     margin-bottom: 42px;
   }
-  .title {
+  .box-content__title {
     font-size: 23px;
     font-weight: 800;
     line-height: 1.04;
     color: #2D2A3E;
     margin-bottom: 16px;
   }
-  .content {
+  .box-content__description {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.65;
@@ -72,6 +72,6 @@
   }
 }
 
-.box-main {
+.box-content__main {
   padding: 39px;
 }

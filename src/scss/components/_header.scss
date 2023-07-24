@@ -12,6 +12,9 @@ a {
   -1px -1px 0 black,
   1px -1px 0 black,
   -1px 1px 0 black;
+  @media (max-width: 1130px) {
+    width: 100%;
+  }
 }
 
 .btn--blue {
@@ -31,10 +34,19 @@ a {
 .navigation__items {
   display: flex;
   gap: 84px;
+  @media (max-width: 1130px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .navigation__buttons {
   display: flex;
   gap: 24px;
+  @media (max-width: 1130px) {
+    padding-top: 84px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header {
@@ -45,11 +57,51 @@ a {
   margin: 0 auto;
   font-size: 20px;
   font-weight: 1.2;
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    gap: 50px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  gap: 50px;
+  @media (max-width: 1130px) {
+    position: fixed;
+    justify-content: start;
+    background-color: #fff;
+    width: 80%;
+    top: 0;
+    height: 100vh;
+    right: -80%;
+    padding-top: 100px;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 99;
+    transition:all 0.5s ease-out;
   }
 }
+
+.header__bars {
+  display: none;
+  z-index: 99;
+  @media (max-width: 1130px) {
+    display: block;
+  }
+}
+
+.show-menu {
+  right: 0%;
+  top: 0;
+}
+
+.show-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  z-index: 2;
+  opacity: 0.5;
+}
+

@@ -2,29 +2,6 @@ a {
   color: #525159;
 }
 
-.btn {
-  padding: 18px 17px;
-  border-radius: 13px;
-  text-align: center;
-  color: white;
-  font-weight: 700;
-  text-shadow: 
-  1px 1px 0 black,
-  -1px -1px 0 black,
-  1px -1px 0 black,
-  -1px 1px 0 black;
-  @media (max-width: 1130px) {
-    width: 100%;
-  }
-}
-
-.btn--blue {
-  background-color: #616AE8;
-}
-.btn--green {
-  background-color: #22E4A7;
-}
-
 .header-flex {
   display: flex;
   align-items: center;
@@ -78,6 +55,9 @@ a {
   align-items: center;
   font-weight: 500;
   gap: 50px;
+  &:active {
+    text-decoration: underline;
+  }
   @media (max-width: 1130px) {
     position: fixed;
     justify-content: start;

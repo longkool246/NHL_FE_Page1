@@ -8,10 +8,17 @@
   position: relative;
   width: 100%;
   border-radius: 8px 8px 0px 0px;
+  overflow: hidden;
   img {
     width: 100%;
     padding-bottom: 19px;
+    transition: 0.3s ease;
+    transform-origin: bottom;
  }
+  img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
 }
 
 .decor {

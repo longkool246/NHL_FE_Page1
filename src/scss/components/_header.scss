@@ -5,6 +5,7 @@ a {
 .btn {
   padding: 18px 17px;
   border-radius: 13px;
+  text-align: center;
   color: white;
   font-weight: 700;
   text-shadow: 
@@ -19,8 +20,6 @@ a {
 
 .btn--blue {
   background-color: #616AE8;
-  // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 0.2px black;
 }
 .btn--green {
   background-color: #22E4A7;
@@ -28,6 +27,7 @@ a {
 
 .header-flex {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -51,12 +51,24 @@ a {
 
 .header {
   display: flex;
+  position: sticky;
   justify-content: flex-start;
   align-items: center;
   padding-top: 43px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 1.2;
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0px 5px 6px -6px #999999;
+  transition: 0.3s ease-in;
 }
 
 .navigation {

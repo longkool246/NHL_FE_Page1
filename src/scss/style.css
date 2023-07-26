@@ -128,6 +128,7 @@ a {
 .btn {
   padding: 18px 17px;
   border-radius: 13px;
+  text-align: center;
   color: white;
   font-weight: 700;
   text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
@@ -140,7 +141,6 @@ a {
 
 .btn--blue {
   background-color: #616AE8;
-  -webkit-text-stroke: 0.2px black;
 }
 
 .btn--green {
@@ -149,6 +149,7 @@ a {
 
 .header-flex {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -177,12 +178,24 @@ a {
 
 .header {
   display: flex;
+  position: sticky;
   justify-content: flex-start;
   align-items: center;
   padding-top: 43px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 1.2;
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0px 5px 6px -6px #999999;
+  transition: 0.3s ease-in;
 }
 
 .navigation {
@@ -237,7 +250,7 @@ a {
 }
 
 section {
-  padding-top: 100px;
+  padding: 0 15px;
 }
 
 .page-section {
@@ -268,7 +281,6 @@ section {
   width: 100%;
   height: 100%;
   background-size: 100%;
-  margin: 0 15px;
   border-radius: 48px;
 }
 
@@ -475,7 +487,6 @@ section {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.85;
-  width: 85%;
 }
 
 .page-content__author {
